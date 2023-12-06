@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Pontresina Preview</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="user-scalable=no">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" >
+    <meta property="og:locale" content="de_DE"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Futurise - Wir machen Ihre Marke mit AR und VR erlebbar"/>
+    <meta property="og:description" content="XR-Agentur aus St. Gallen. Mit Augmented Reality &amp; Virtual Reality erwecken wir Ihre Inhalte zum Leben. Wir entwickeln erfolgreiche Lösungen für Marketing-, Sales- und Bildungszwecke."/>
+    <meta property="og:url" content="https://futurise.ch/"/>
+    <meta property="og:site_name" content="Futurise"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" >
+    <meta name = "theme-color" content = "#000000">
+    <link rel="icon" href="https://futurise.ch/wp-content/uploads/2022/10/Futurise_icon_default.svg" sizes="32x32"/>
+    <link rel="icon" href="https://futurise.ch/wp-content/uploads/2022/10/Futurise_icon_default.svg" sizes="192x192"/>
+    <meta property="og:image" content="https://futurise.ch/wp-content/uploads/2022/10/human-768x620.png"/>
+    <link type="text/css" href="./stylesf.css" rel="stylesheet"/>
+    <!-- OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+    <script src="script.js" ></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+      <model-viewer class="model-viewer" src="Assets/4chars.glb" ar ar-modes="scene-viewer quick-look webxr" camera-controls autoplay="true" poster="poster.png" shadow-intensity="1" touch-action="pan-y">
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+        Jetzt starten
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+  </body>
+</html>
