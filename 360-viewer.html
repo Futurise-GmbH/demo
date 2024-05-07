@@ -43,7 +43,8 @@
 
                     // Append the new a-sky element to the scene
                     scene.appendChild(sky);
-                    scene.enterVR();
+                    if(AFRAME.utils.device.isMobileVR())
+                        scene.enterVR();
                 };
 
                 // Define what to do in case of an error reading the file
